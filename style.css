@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.card{
+    width: 87%;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    overflow: auto;
+}
+
+.info-wrapper{
+    display: flex;
+    margin: 2rem 2rem 1.5rem 2rem;
+    align-items: center;
+}
+.info-wrapper img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    /* border: 3px solid black; */
+}
+
+.name-job{
+    margin-left: 1.5rem;
+    
+}
+/* text , blue card specific styling*/
+
+.name-job .name{
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+}
+.name-job .job{
+    font-size: 0.9rem;
+    color: hsla(0, 0%, 100%, 50%);
+}
+.card h3{
+    font-size: 1.5rem;
+    margin: 1.5rem 2rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+.card > p{
+    margin: 1.5rem 2rem 2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: hsla(0, 0%, 100%, 70%);
+
+}
+/* purple card specific styling*/
+.purple.card{
+    position: relative;
+}
+.purple.card .info-wrapper{
+    position: relative; /* it has to be relative to use z-index*/
+    z-index: 10;
+}
+.purple.card .job{
+    color: hsla(0, 0%, 100%, 50%);
+}
+.purple.card h3{
+    position: relative; /* it has to be relative to use z-index*/
+    z-index: 10;
+}
+.purple.card > p{
+    color: hsla(0, 0%, 100%, 70%)
+}
+.purple.card > img{
+    position: absolute;
+    top:0;
+    right: 2rem;
+    z-index: 1;
+}
+
+/* grey card specific styling */
+.grey.card .name{
+    color: white;
+}
+.grey.card h3{
+    color: white;
+}
+.grey.card .job{
+    color: hsla(0, 0%, 100%, 50%);
+}
+.grey.card > p{
+    color: hsl(0, 0%, 100%, 70%)
+}
+/* white cards specific styling */
+.white.card .name,.white.card h3{
+    color: hsl(217, 19%, 35%);
+}
+.white.card .job{
+    color: hsla(217, 19%, 35%, 50%)
+}
+.white.card > p{
+    color: hsla(217, 19%, 35%, 70%);
+}
+/* card's background-color */
+.purple{
+    background-color: hsl(263, 55%, 52%);
+}
+.grey{
+    background-color: hsl(217, 19%, 35%);
+}
+.dark-blue{
+    background-color: hsl(219, 29%, 14%);
+}
+.white{
+    color: hsl(217, 19%, 35%);
+    background-color: white;
+}
+/* ----------------------- */
