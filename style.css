@@ -41,7 +41,7 @@ body{
     color: hsla(0, 0%, 100%, 50%);
 }
 .card h3{
-    font-size: 1.32rem;
+    font-size: 1.5rem;
     margin: 1.5rem 2.5rem;
     color: hsl(0, 0%, 100%);
     font-weight: 600;
@@ -49,7 +49,7 @@ body{
 }
 .card > p{
     margin: 1.5rem 2.5rem 2rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem;
     color: hsla(0, 0%, 100%, 70%);
@@ -143,8 +143,12 @@ body{
         justify-content: center;
         align-items: center;
     }
+    /* changing the svg position */
+    .purple.card > img{
+        right: 7rem;
+    }
     .main-card{
-        width: 1200px;
+        width: 1100px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
